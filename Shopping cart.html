@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="Shopping cart.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Office Supplies Shop</h1>
+    </header>
+    
+    
+    <section>
+
+        <div id="products-container">
+
+            <article>
+                <figure>
+                    <img src="images/114404_ELP_WB_NOTEBOOK_PP_CASEMADE_B5_70G_150S_WHC-101_02.png" alt="Number Book" width="600" height="400"> 
+                    <figcaption>
+                        <h4>Number Book</h4>
+                        <p>$159</p>
+                        <button onclick="addToCart('Number Book', 159)">Add to Cart</button>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="images/Double A 80 grams.png" alt="paper" width="600" height="400">
+                    <figcaption>
+                        <h4>Double A photocopy paper 80 grams</h4>
+                        <p>$750</p>
+                        <button onclick="addToCart('Double A photocopy paper 80 grams', 750)">Add To Cart</button>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <!-- Product items will be dynamically added here -->
+        </div>
+
+        <!-- Shopping Cart Section -->
+        <div id="cart">
+            <h2>Your Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+
+        <div id="checkout-message">
+            <p>Thank you for shopping with us! Your total amount is: $<span id="cart-total-display">0.00</span>.</p>
+        </div>
+
+    </section>
+   
+
+    
+   
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
